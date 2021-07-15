@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cubo de Rubik</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <div class="cubo" id="cubo">
+    <div class="pieza"  layer="F L U">
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(101px);" layer="F M U">
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(202px);" layer="F R U">
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+    </div>
+    <div class="pieza" style="transform: translateY(101px);" layer="F L E">
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(101px) translateY(101px);" layer="F M E">
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(202px) translateY(101px);" layer="F R E">
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+    </div>
+    <div class="pieza" style="transform: translateY(202px);" layer="F L D">
+      <div class="cara"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(101px) translateY(202px);" layer="F M D">
+      <div class="cara"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(202px) translateY(202px);" layer="F R D">
+      <div class="cara"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+    </div>
+    <div class="pieza" style="transform: translateZ(-101px);" layer="S L U">
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(101px) translateZ(-101px);" layer="S M U">
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(202px) translateZ(-101px);" layer="S R U">
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+    </div>
+    <div class="pieza" style="transform: translateY(101px) translateZ(-101px);" layer="S L E">
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(101px) translateY(101px) translateZ(-101px);" layer="">
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(202px) translateY(101px) translateZ(-101px);" layer="S R E">
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+    </div>
+    <div class="pieza" style="transform: translateY(202px) translateZ(-101px);" layer="S L D">
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(101px) translateY(202px) translateZ(-101px);" layer="S M D">
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(202px) translateY(202px) translateZ(-101px);" layer="S R D">
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+    </div>
+    <div class="pieza" style="transform: translateZ(-202px);" layer="B L U">
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(101px) translateZ(-202px);" layer="B M U">
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(202px) translateZ(-202px);" layer="B R U">
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+    </div>
+    <div class="pieza" style="transform: translateY(101px) translateZ(-202px);" layer="B L E">
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(101px) translateY(101px) translateZ(-202px);" layer="B M E">
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(202px) translateY(101px) translateZ(-202px);" layer="B R E">
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+    </div>
+    <div class="pieza" style="transform: translateY(202px) translateZ(-202px);" layer="B L D">
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(101px) translateY(202px) translateZ(-202px);" layer="B M D">
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+    </div>
+    <div class="pieza" style="transform: translateX(202px) translateY(202px) translateZ(-202px);" layer="B R D">
+      <div class="cara hidden"></div>
+      <div class="cara"></div>
+      <div class="cara"></div>
+      <div class="cara"></div>
+      <div class="cara hidden"></div>
+      <div class="cara hidden"></div>
+    </div>
+  </div>
+  <form class="panel" id="panel">
+    <h1>Mover Ejes</h1>
+    <div class="group">
+      <label>Girar Eje X:</label>
+      <div class="row">
+        <input type="range" min="0" max="360" class="slider_x" id="slider_x">
+        <div class="text">
+          <input type="text" readonly  class="num_x" id="num_x">
+        </div>
+      </div>
+    </div>
+    <div class="group">
+      <label>Girar Eje Y:</label>
+      <div class="row">
+        <input type="range" min="0" max="360" class="slider_y" id="slider_y">
+        <div class="text">
+          <input type="text" readonly class="num_y" id="num_y">
+        </div>
+      </div>
+    </div>
+  </form>
+  <script src="js/app.js"></script>
+</body>
+</html>
